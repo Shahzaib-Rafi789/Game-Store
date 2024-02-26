@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import AllGames from './AllGames';
+import Icon from './assets/icon_undertale.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <header className='heading'>GAME ST<img className='heading-icon' src={Icon} />RE</header>
+      <AllGames></AllGames>
     </div>
   );
 }
